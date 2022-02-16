@@ -1,0 +1,57 @@
+/* Selectores*/
+
+/*
+    Selector universal*.
+
+    Se usa para aplicar unas propiedades a todos los elementos de la pagina web.
+    */
+
+    *{
+        /*font-family es el tipo de letra*/
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    /*Selector de etiqueta*/
+
+    h1{
+       background-color: red; 
+       color: white;
+       padding: 10px;
+    }
+
+    h2{
+        background-color: orange; 
+       color: blue;
+       
+    }
+
+    a{
+        text-decoration: none;
+        font-size: 20px;
+        
+    }
+
+    footer a{
+        color: aqua !important;
+    }
+
+    /*
+        Selector de id
+        Se usa para dar estilo a los componentes que tienen un id
+    */
+
+    #descripcion{
+        padding: 15px;
+        margin: 10px;
+        border: red solid;
+        border-radius: 10px;
+    }
+
+    /*
+                Selector de clase
+        Usados para dar formato a los componetes que tienen asociada una clase
+    */
+
+    .parrafoUno{
+        font-style: italic;
+    }
