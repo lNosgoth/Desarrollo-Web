@@ -1,0 +1,142 @@
+
+:root {
+    --white: #FFF;
+    --gray: #E6E9EF;
+    --black: #000;
+    --pink: #FFD5E5;
+    --yellow: #FFFFDD;
+    --teal: #A0FFE6;
+    --blue: #81F5FF;
+}
+body {
+    margin: 0;
+    background-color: var(--gray);
+    font-family: 'Inconsolata', monospace;
+  }
+
+  .contenedorPrincipal{
+      display: flex;
+      
+      flex-direction: row;
+      align-items: stretch;
+      justify-content: space-around;
+
+      border: 5px solid slateblue;
+      padding: 30px;
+      margin: 30px;
+  }
+
+  h1 {
+    text-decoration: none;
+    color:red;
+    margin:30px;
+    text-align: center;
+    font-size: 24px;
+ 
+  }
+  h1:hover{
+      color: green;
+  }
+  h1 {
+      transition: color 0.2s linear 0.2s;
+
+  }
+  .containertitulo{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+  .containerUno {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    background: var(--white);
+    border: 3px solid var(--black);
+    width: 40%;
+   
+  }
+  .contenedorlogo{
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+  }
+
+  .containerDos{
+      display: flex;
+      flex-direction: column;
+      background-color: azure;
+      border:2px solid var(--black);
+      width: 30%;
+  }
+
+  .item {
+    border: 3px solid var(--black);
+    margin: 2px;
+    border-radius: 10px;
+    min-width: 50px;
+    min-height: 50px;
+  }
+
+  .item:nth-child(1) {
+    background-color: var(--pink);
+    text-align: center;
+  }
+
+  .item:nth-child(2) {
+    background-color: var(--yellow);
+    text-align: center;
+  }
+  
+  .item:nth-child(3) {
+    background-color: var(--teal);
+    text-align: center;
+  }
+  
+  .item:nth-child(4) {
+      background-color: var(--blue);
+      text-align: center;
+  }
+  html,
+  body {
+    height: 50%;
+    margin: 0;
+    overflow: hidden;
+  }
+  
+  body {
+    background-color: #1a202c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .logo {
+    animation-name: logoAnimation;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 1;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: initial;
+    
+    width: 200px;
+  }
+  
+  @keyframes logoAnimation {
+    0% {
+      opacity: 0;
+      transform: translateX(-100px);
+    }
+    20%,80% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100px);}
+  }
